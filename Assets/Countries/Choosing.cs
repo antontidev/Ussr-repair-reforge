@@ -7,6 +7,7 @@ public class Choosing : MonoBehaviour
     public Material material;
     private MeshRenderer meshRenderer;
     public Material defaultMaterial;
+
     private void OnMouseEnter()
     {
         meshRenderer.material = material;

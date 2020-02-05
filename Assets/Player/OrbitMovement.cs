@@ -5,6 +5,7 @@ using UnityEngine;
 public class OrbitMovement : MonoBehaviour
 {
     public float speed;
+    [Range(0f, 1f)]
     public float smoothingFactor;
 
     public Transform objectToMove;
@@ -42,7 +43,7 @@ public class OrbitMovement : MonoBehaviour
     {
         if (!changingMiddle)
         {
-            Quaternion camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
+            Quaternion camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse X") * speed, 0, Input.GetAxis("Mouse Y") * speed);
 
 
             cameraOffset = camTurnAngle * cameraOffset;
