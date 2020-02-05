@@ -43,7 +43,7 @@ public class OrbitMovement : MonoBehaviour
     {
         if (!changingMiddle)
         {
-            Quaternion camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse X") * speed, 0, Input.GetAxis("Mouse Y") * speed);
+            Quaternion camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
 
 
             cameraOffset = camTurnAngle * cameraOffset;

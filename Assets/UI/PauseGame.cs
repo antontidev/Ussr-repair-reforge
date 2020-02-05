@@ -21,6 +21,7 @@ public class PauseGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         isPaused = gameObject.activeInHierarchy;
         if (gameObject.activeInHierarchy)
         {
@@ -37,7 +38,7 @@ public class PauseGame : MonoBehaviour
                 Time.timeScale = 1f;
                 //StartCoroutine(Resume());
             }
-        }
+        }*/
     }
 
     IEnumerator Pause()

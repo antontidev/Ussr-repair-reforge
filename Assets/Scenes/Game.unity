@@ -384,12 +384,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 176.3
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
@@ -529,12 +529,12 @@ PrefabInstance:
     - target: {fileID: 7399238582735043800, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7399238582735043800, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7399238583065142762, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
@@ -664,22 +664,22 @@ PrefabInstance:
     - target: {fileID: 7399238583065142763, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7399238583361046225, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7399238583361046225, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7399238583361046225, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7399238583386621392, guid: 5d49fde14e4a21241b627d14073f219b,
         type: 3}
@@ -1451,9 +1451,9 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 50
   field of view: 50
-  orthographic: 1
+  orthographic: 0
   orthographic size: 8.91
   m_Depth: -1
   m_CullingMask:
@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8983e914331e144094c6daa7c5d28d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 100
   smoothingFactor: 0.2
   objectToMove: {fileID: 49514289}
   pointWithOrbit: {x: -7, y: 0, z: -6}
@@ -1674,8 +1674,8 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PlaneDistance: 1
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
