@@ -16,6 +16,8 @@ public class OrbitMovement : MonoBehaviour
     private Vector3 startNewMiddle;
     private Vector3 endNewMiddle;
 
+    public float xRot;
+    public float yRot;
     private bool changingMiddle;
 
     // Start is called before the first frame update
@@ -41,9 +43,14 @@ public class OrbitMovement : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (!changingMiddle)
+        xRot += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
+        yRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
+
+        transform.position = objectToMove.position + Quaternion.Euler(xRot, yRot, 0f) * ( -Vector3.back);
+        transform.LookAt(objectToMove.position, Vector3.up);
+        /*if (!changingMiddle)
         {
-            Quaternion camTurnAngle = Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
+            Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up); //Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
 
 
             cameraOffset = camTurnAngle * cameraOffset;
@@ -52,7 +59,7 @@ public class OrbitMovement : MonoBehaviour
 
             transform.position = Vector3.Slerp(transform.position, newPos, Time.deltaTime * smoothingFactor);
 
-            transform.LookAt(objectToMove.transform.position + viewOffset);
-        }
+            transform.LookAt(objectToMove.transform);
+        }*/
     }
 }
