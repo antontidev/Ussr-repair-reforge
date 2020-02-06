@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 0d3ee1a49efce104ab0b980ad3db70b7
+guid: a58059073dbae6a4a878f874c3fae089
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SVGMat.001
+    second: {fileID: 2100000, guid: dec66089b34deff41a092222495c434f, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -68,7 +73,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []

@@ -43,11 +43,11 @@ public class OrbitMovement : MonoBehaviour
     }
     void LateUpdate()
     {
-        xRot += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
-        yRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
+        xRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
+        yRot += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
 
-        transform.position = objectToMove.position + Quaternion.Euler(xRot, yRot, 0f) * ( -Vector3.back);
-        transform.LookAt(objectToMove.position, Vector3.up);
+       // transform.position = objectToMove.position + Quaternion.Euler(xRot, yRot, 0f) * ( -Vector3.back);
+       // transform.LookAt(objectToMove);
         /*if (!changingMiddle)
         {
             Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up); //Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
