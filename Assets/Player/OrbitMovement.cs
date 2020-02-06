@@ -4,55 +4,35 @@ using UnityEngine;
 
 public class OrbitMovement : MonoBehaviour
 {
-    public float speed;
+    public Vector3 cameraOffset;
+    public Transform player;
+
     [Range(0f, 1f)]
-    public float smoothingFactor;
+    public float smoothing;
+    public float speed = 5f;
 
-    public Transform objectToMove;
-    public Vector3 pointWithOrbit;
-
-    private Vector3 viewOffset;
-    private Vector3 cameraOffset;
-    private Vector3 startNewMiddle;
-    private Vector3 endNewMiddle;
-
-    public float height;
-    public float weigth;
-
-    public float xRot;
-    public float yRot;
-    private bool changingMiddle;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        cameraOffset = transform.position - objectToMove.position;
+        cameraOffset = transform.position - player.position;
     }
 
-
-    private void Update()
+    private void LateUpdate()
     {
-        
-        if (Input.GetMouseButtonDown(2))
-        {
-            changingMiddle = true;
-            startNewMiddle = Camera.main.ScreenToWorldPoint(transform.position);
-        }
-        else if (Input.GetMouseButtonUp(2))
-        {
-            changingMiddle = false;
-            endNewMiddle = Camera.main.ScreenToWorldPoint(transform.position);
-            //или наоборот
-            viewOffset = endNewMiddle - startNewMiddle;
-        }
+        //Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up);
+        float x = Input.GetAxis("Mouse Y");
+        float y = Input.GetAxis("Mouse X");
+        if (Mathf.Abs(y) > 160)
+            y = transform.rotation.y;
+        else
+            y *= speed;
+        Quaternion camTurnAngle = Quaternion.Euler(x * speed, y, 0);
 
-    }
-    void LateUpdate()
-    {
-        /*xRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
-        yRot += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
+        cameraOffset = camTurnAngle * cameraOffset;
+        Vector3 newPos = player.position + cameraOffset;
 
-        transform.position += Quaternion.Euler(xRot, yRot, 0f) * Vector3.one;
-        transform.LookAt(objectToMove);*/
+        transform.position = Vector3.Slerp(transform.position, newPos, smoothing);
+
+        transform.LookAt(player);
     }
+
 }
