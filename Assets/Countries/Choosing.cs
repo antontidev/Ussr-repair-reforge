@@ -10,24 +10,30 @@ public class Choosing : MonoBehaviour
 
     public float axisToMove = 0.5f;
     public float speed = 5f;
-    public Vector3 defaultPosition;
-    private Vector3 targetPosition;
     private void OnMouseEnter()
     {
         meshRenderer.material = material;
-        StartCoroutine(MoveToChoose());
+        int multiplier;
+        if (transform.position.z > 0)
+            multiplier = -1;
+        else
+            multiplier = 1;
+        transform.position += Vector3.forward * multiplier * axisToMove; ;
     }
 
     private void OnMouseExit()
     {
         meshRenderer.material = defaultMaterial;
-        StartCoroutine(MoveToDefault());
+        int multiplier;
+        if (transform.position.z > 0)
+            multiplier = -1;
+        else
+            multiplier = 1;
+        transform.position += Vector3.back * multiplier * axisToMove;
     }
     // Start is called before the first frame update
     void Start()
     {
-        defaultPosition = transform.position;
-        targetPosition = new Vector3(transform.position.x, transform.position.z + axisToMove, transform.position.y);
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
@@ -35,21 +41,5 @@ public class Choosing : MonoBehaviour
     void Update()
     {
        
-    }
-    IEnumerator MoveToChoose()
-    {
-        while (Vector3.Distance(transform.position, targetPosition) > 0.001f)
-        {
-            transform.position += Vector3.back * speed * Time.deltaTime;
-            yield return null;
-        }
-    }
-    IEnumerator MoveToDefault()
-    {
-        while (Vector3.Distance(transform.position, defaultPosition)> 0.001f)
-        {
-            transform.position -= Vector3.back * speed * Time.deltaTime;
-            yield return null;
-        }
     }
 }

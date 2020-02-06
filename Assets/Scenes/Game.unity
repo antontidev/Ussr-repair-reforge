@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.677032, g: 0.7136355, b: 0.7000165, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,9 +140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 2142653576}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &12609494
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -171,8 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &12609496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,22 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &12609497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12609490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &49514288 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1987142532388575239, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -220,9 +207,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 80927465}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &49514292
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -251,8 +238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &49514294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,22 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &49514295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49514288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1001 &80160212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,9 +499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1996697431}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &221136735
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -556,8 +530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &221136737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,22 +544,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &221136738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 221136731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &242412077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 963509369485227249, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -605,9 +566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 2119757042}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &242412081
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -636,8 +597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &242412083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,22 +611,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &242412084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242412077}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1001 &261452634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -767,16 +715,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: -6526490166557485859, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -5688591943380996006, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: -5688591943380996006, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4774383259421840875, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: -4774383259421840875, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -847,6 +810,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: -2451452004614483743, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1987142532388575239, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_IsActive
@@ -867,26 +835,51 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: -374820466433209919, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -364568653248389507, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: -364568653248389507, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281440896025919623, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 1281440896025919623, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1314430325098483982, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 1314430325098483982, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3498385919952518464, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 3498385919952518464, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4108751013724639170, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -897,31 +890,61 @@ PrefabInstance:
       propertyPath: m_MotionVectors
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4108751013724639170, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4305112718212787007, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: 4305112718212787007, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4462338356553825990, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 4462338356553825990, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498639684536242526, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 4498639684536242526, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207790143318568105, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
     - target: {fileID: 6207790143318568105, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7095465352724576440, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+    - target: {fileID: 7095465352724576440, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3ee1a49efce104ab0b980ad3db70b7, type: 3}
 --- !u!4 &261545689 stripped
@@ -1405,9 +1428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1744023653}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &455755050
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1436,8 +1459,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &455755052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,22 +1473,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &455755053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455755046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1001 &483401164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1569,9 +1579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1122093020}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &485703170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1600,8 +1610,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &485703172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,6 +1624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &526836088 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2328058701779559765, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -1633,9 +1646,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1332517672}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &526836092
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1664,8 +1677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &526836094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,22 +1691,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &526836095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526836088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &625712869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,9 +2097,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 800218983}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &766821170
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2128,8 +2128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &766821172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,22 +2142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &766821173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766821166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &789355111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6931990587107357913, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -2177,9 +2164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1949414333}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &789355115
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2208,8 +2195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &789355117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2222,22 +2209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &789355118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789355111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!4 &791072665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -2275,9 +2249,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 1495069256}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &891956251
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2306,8 +2280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &891956253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2320,22 +2294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &891956254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891956247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2349,6 +2310,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2543,6 +2505,18 @@ MonoBehaviour:
   pointWithOrbit: {x: -7, y: 0, z: -6}
   xRot: 0
   yRot: 0
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c72ec55beba214591da165512a8d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &967809453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3022,9 +2996,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 138262714}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &1331316508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3053,8 +3027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1331316510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,6 +3041,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!4 &1332517672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a58059073dbae6a4a878f874c3fae089,
@@ -3480,9 +3457,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 881642092}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &1776035575
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3511,8 +3488,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1776035577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3525,22 +3502,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1776035578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776035571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &1867745708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a58059073dbae6a4a878f874c3fae089,
@@ -3581,9 +3545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 664409076}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &1927867165
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3612,8 +3576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1927867167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3626,22 +3590,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1927867168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927867161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!1 &1940456622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4343224831130140070, guid: 0d3ee1a49efce104ab0b980ad3db70b7,
@@ -3661,9 +3612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 190816327}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &1940456626
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3692,8 +3643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1940456628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3706,22 +3657,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1940456629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940456622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15fb0b80083fd76409c41a12ae1f9272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hummer: {fileID: 0}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
-  pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!4 &1949414333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a58059073dbae6a4a878f874c3fae089,
@@ -3747,9 +3685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hummer: {fileID: 337307686}
-  offsetOfCenterObject: {x: 0, y: 0, z: 0}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 5
+  speed: 1
+  distance: 100
 --- !u!64 &1956917643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3778,8 +3716,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
+  axisToMove: 0.5
   speed: 5
-  defaultPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &1956917645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3792,6 +3730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97ae918631068184f8d073ae94b78d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shacker: {fileID: 963194231}
+  isUssr: 0
+  resource: 0
 --- !u!4 &1996697431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a58059073dbae6a4a878f874c3fae089,
