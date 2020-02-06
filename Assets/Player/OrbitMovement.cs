@@ -16,6 +16,9 @@ public class OrbitMovement : MonoBehaviour
     private Vector3 startNewMiddle;
     private Vector3 endNewMiddle;
 
+    public float height;
+    public float weigth;
+
     public float xRot;
     public float yRot;
     private bool changingMiddle;
@@ -26,8 +29,10 @@ public class OrbitMovement : MonoBehaviour
         cameraOffset = transform.position - objectToMove.position;
     }
 
+
     private void Update()
     {
+        
         if (Input.GetMouseButtonDown(2))
         {
             changingMiddle = true;
@@ -40,26 +45,14 @@ public class OrbitMovement : MonoBehaviour
             //или наоборот
             viewOffset = endNewMiddle - startNewMiddle;
         }
+
     }
     void LateUpdate()
     {
-        xRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
+        /*xRot += Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
         yRot += Input.GetAxis("Mouse X") * speed * Time.deltaTime;
 
-       // transform.position = objectToMove.position + Quaternion.Euler(xRot, yRot, 0f) * ( -Vector3.back);
-       // transform.LookAt(objectToMove);
-        /*if (!changingMiddle)
-        {
-            Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up); //Quaternion.Euler(Input.GetAxis("Mouse X") * speed, Input.GetAxis("Mouse Y") * speed, 0);
-
-
-            cameraOffset = camTurnAngle * cameraOffset;
-
-            Vector3 newPos = objectToMove.position + cameraOffset;
-
-            transform.position = Vector3.Slerp(transform.position, newPos, Time.deltaTime * smoothingFactor);
-
-            transform.LookAt(objectToMove.transform);
-        }*/
+        transform.position += Quaternion.Euler(xRot, yRot, 0f) * Vector3.one;
+        transform.LookAt(objectToMove);*/
     }
 }

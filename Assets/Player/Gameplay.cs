@@ -15,9 +15,15 @@ public class Gameplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         if (isUssr)
         {
             StartCoroutine(shacker.Shake(0.15f, 0.4f));
         }
     }
+    private void OnMouseDown()
+    {
+        isUssr = !isUssr;
+    }
+
 }
