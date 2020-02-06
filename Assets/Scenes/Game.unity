@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 2142653576}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &12609494
 MeshCollider:
@@ -172,7 +172,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &12609496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 80927465}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &49514292
 MeshCollider:
@@ -239,7 +238,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &49514294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,7 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1996697431}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &221136735
 MeshCollider:
@@ -531,7 +529,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &221136737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 2119757042}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &242412081
 MeshCollider:
@@ -598,7 +595,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &242412083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,7 +1425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1744023653}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &455755050
 MeshCollider:
@@ -1460,7 +1456,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &455755052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,7 +1575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1122093020}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &485703170
 MeshCollider:
@@ -1611,7 +1606,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &485703172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1647,7 +1641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1332517672}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &526836092
 MeshCollider:
@@ -1678,7 +1672,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &526836094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1741,6 +1734,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &630524574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 630524575}
+  m_Layer: 0
+  m_Name: CameaHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &630524575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630524574}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.9, y: 6.82, z: 69.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 963194228}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &636959952
 GameObject:
@@ -2098,7 +2122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 800218983}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &766821170
 MeshCollider:
@@ -2129,7 +2153,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &766821172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2165,7 +2188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1949414333}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &789355115
 MeshCollider:
@@ -2196,7 +2219,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &789355117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2250,7 +2272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 1495069256}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &891956251
 MeshCollider:
@@ -2281,7 +2303,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &891956253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,11 +2397,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.9, y: 6.82, z: 69.9}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 630524575}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -2997,7 +3018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 138262714}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &1331316508
 MeshCollider:
@@ -3028,7 +3049,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &1331316510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3458,7 +3478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 881642092}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &1776035575
 MeshCollider:
@@ -3489,7 +3509,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &1776035577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3546,7 +3565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 664409076}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &1927867165
 MeshCollider:
@@ -3577,7 +3596,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &1927867167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3613,7 +3631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 190816327}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &1940456626
 MeshCollider:
@@ -3644,7 +3662,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &1940456628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,7 +3703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hummer: {fileID: 337307686}
   pointOutsideScreen: {x: 0, y: 0, z: 0}
-  speed: 1
+  speed: 5
   distance: 100
 --- !u!64 &1956917643
 MeshCollider:
@@ -3717,7 +3734,6 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 69b31f43daba7fc4a9d8a9f88cc3ba10, type: 2}
   defaultMaterial: {fileID: 2100000, guid: 130ff6582167c724f8c79b55226c66ba, type: 2}
   axisToMove: 0.5
-  speed: 5
 --- !u!114 &1956917645
 MonoBehaviour:
   m_ObjectHideFlags: 0

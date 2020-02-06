@@ -9,7 +9,6 @@ public class Choosing : MonoBehaviour
     public Material defaultMaterial;
 
     public float axisToMove = 0.5f;
-    public float speed = 5f;
     private void OnMouseEnter()
     {
         meshRenderer.material = material;

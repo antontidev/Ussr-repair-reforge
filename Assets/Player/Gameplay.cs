@@ -5,21 +5,19 @@ using UnityEngine;
 public class Gameplay : MonoBehaviour
 {
     public CameraShacker shacker;
-    public bool isUssr = true;
+    public bool isUssr = false;
     public float resource = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (resource <= 0f)
+        if (isUssr)
         {
-            isUssr = true;
-            shacker.Shake();
+            StartCoroutine(shacker.Shake(0.15f, 0.4f));
         }
     }
 }
