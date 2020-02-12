@@ -30,7 +30,7 @@ public class HummerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameplay.isUssr)
+        if (gameplay.isUSSR)
         {
             if (Vector3.Distance(hummer.position, transform.position + offsetOfCenterObject) > 0.01f)
             {

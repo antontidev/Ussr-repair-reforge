@@ -4,35 +4,35 @@ using UnityEngine;
 
 public class OrbitMovement : MonoBehaviour
 {
-    public Vector3 cameraOffset;
-    public Transform player;
-
-    [Range(0f, 1f)]
-    public float smoothing;
+    public float pitch = 0.0f;
     public float speed = 5f;
-
+    public float yaw = 0.0f;
     private void Start()
     {
-        cameraOffset = transform.position - player.position;
+    }
+
+    private void Update()
+    {
+
     }
 
     private void LateUpdate()
     {
-        //Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * speed, Vector3.up);
-        float x = Input.GetAxis("Mouse Y");
-        float y = Input.GetAxis("Mouse X");
-        if (Mathf.Abs(y) > 160)
-            y = transform.rotation.y;
-        else
-            y *= speed;
-        Quaternion camTurnAngle = Quaternion.Euler(x * speed, y, 0);
 
-        cameraOffset = camTurnAngle * cameraOffset;
-        Vector3 newPos = player.position + cameraOffset;
+        float movementX = speed * Input.GetAxis("Mouse Y") * Time.deltaTime;
 
-        transform.position = Vector3.Slerp(transform.position, newPos, smoothing);
+        if (Mathf.Abs(pitch - movementX) < 25)
+        {
+            pitch -= movementX;
+        }
 
-        transform.LookAt(player);
+
+        float movementY = speed * Input.GetAxis("Mouse X") * Time.deltaTime;
+        if (Mathf.Abs(yaw + movementY) < 25)
+        {
+            yaw += movementY;
+        }
+        
+        transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
-
 }
